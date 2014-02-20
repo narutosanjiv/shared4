@@ -1,6 +1,6 @@
 # Shared4
 
-TODO: Write a gem description
+Implementation of 4shared api call
 
 ## Installation
 
