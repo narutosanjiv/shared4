@@ -16,9 +16,9 @@ module Shared4
       category_code = NAME_CATEGORY[category_name.to_sym]
 
       data = if opts[:q]
-               RestClient.get  "#{PUBLIC_BASE_URL}", {oauth_consumer_key: @consumer_key, category: category_code, query: opts[:q]}
+               ::RestClient.get  "#{PUBLIC_BASE_URL}", {oauth_consumer_key: @consumer_key, category: category_code, query: opts[:q]}
              else
-               RestClient.get  "#{PUBLIC_BASE_URL}", {oauth_consumer_key: @consumer_key, category: category_code}
+               ::RestClient.get  "#{PUBLIC_BASE_URL}", {oauth_consumer_key: @consumer_key, category: category_code}
              end           
     end
 
